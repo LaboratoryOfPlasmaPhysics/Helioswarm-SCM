@@ -1,0 +1,512 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "SCM Interface"
+Date "2020-12-14"
+Rev "BBM"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2125 1975 0    50   ~ 0
+Sh_X
+Text Label 2125 2975 0    50   ~ 0
+Chassis
+Text Label 2125 3075 0    50   ~ 0
+RTN_MON_A
+Text Label 2125 2875 0    50   ~ 0
+TEMP_MON_A
+$Comp
+L power:GND #PWR0101
+U 1 1 5D5B0EEF
+P 1450 1550
+F 0 "#PWR0101" H 1450 1300 50  0001 C CNN
+F 1 "GND" H 1455 1377 50  0000 C CNN
+F 2 "" H 1450 1550 50  0001 C CNN
+F 3 "" H 1450 1550 50  0001 C CNN
+	1    1450 1550
+	1    0    0    -1  
+$EndComp
+Text Label 2125 1875 0    50   ~ 0
+CR_X
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D666F48
+P 1450 1400
+F 0 "#FLG0101" H 1450 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1450 1573 50  0000 C CNN
+F 2 "" H 1450 1400 50  0001 C CNN
+F 3 "~" H 1450 1400 50  0001 C CNN
+	1    1450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 2575 2125 2575
+Wire Wire Line
+	2025 2475 2125 2475
+Wire Wire Line
+	2025 2275 2125 2275
+Wire Wire Line
+	2025 2175 2125 2175
+Wire Wire Line
+	2025 2075 2125 2075
+Wire Wire Line
+	2025 1875 2125 1875
+Wire Wire Line
+	2025 1775 2125 1775
+Wire Wire Line
+	2025 1675 2125 1675
+Wire Wire Line
+	2125 2675 2025 2675
+Wire Wire Line
+	2125 2875 2025 2875
+Wire Wire Line
+	2125 2975 2025 2975
+Wire Wire Line
+	2125 3075 2025 3075
+Text Label 2125 1775 0    50   ~ 0
+M_X
+Text Label 2125 1675 0    50   ~ 0
+B_X
+Text Label 4225 1850 0    50   ~ 0
+B_Z
+Text Label 4225 1600 0    50   ~ 0
+B_X
+Text Label 4225 1725 0    50   ~ 0
+B_Y
+Text Label 4225 2225 0    50   ~ 0
+CR_Y
+Text Label 4225 2350 0    50   ~ 0
+CR_Z
+Text Label 4225 2100 0    50   ~ 0
+CR_X
+Text Label 4225 2725 0    50   ~ 0
+M_Y
+Text Label 4225 2850 0    50   ~ 0
+M_Z
+Text Label 4225 2600 0    50   ~ 0
+M_X
+Wire Wire Line
+	4900 2850 4225 2850
+Wire Wire Line
+	4900 2725 4225 2725
+Wire Wire Line
+	4900 2600 4225 2600
+Wire Wire Line
+	4900 2350 4225 2350
+Wire Wire Line
+	4900 2225 4225 2225
+Wire Wire Line
+	4900 2100 4225 2100
+Wire Wire Line
+	4900 1850 4225 1850
+Wire Wire Line
+	4900 1725 4225 1725
+Wire Wire Line
+	4900 1600 4225 1600
+$Sheet
+S 4900 1375 1425 2400
+U 5D6520CE
+F0 "Asic" 50
+F1 "Asic.sch" 50
+F2 "+6V_C" I R 6325 1850 50 
+F3 "+6V_B" I R 6325 1725 50 
+F4 "+6V_A" I R 6325 1600 50 
+F5 "M_X" I L 4900 2600 50 
+F6 "M_Y" I L 4900 2725 50 
+F7 "M_Z" I L 4900 2850 50 
+F8 "B_X" I L 4900 1600 50 
+F9 "RTNx" I R 6325 3100 50 
+F10 "Sx" I R 6325 2600 50 
+F11 "CR_X" I L 4900 2100 50 
+F12 "CAL" I R 6325 3600 50 
+F13 "B_Y" I L 4900 1725 50 
+F14 "RTNy" I R 6325 3225 50 
+F15 "Sy" I R 6325 2725 50 
+F16 "CR_Y" I L 4900 2225 50 
+F17 "B_Z" I L 4900 1850 50 
+F18 "RTNz" I R 6325 3350 50 
+F19 "Sz" I R 6325 2850 50 
+F20 "CR_Z" I L 4900 2350 50 
+F21 "RTN_B" I R 6325 2225 50 
+F22 "RTN_A" I R 6325 2100 50 
+F23 "RTN_C" I R 6325 2350 50 
+$EndSheet
+Text Label 7000 1850 2    50   ~ 0
++6V_C
+Text Label 7000 1600 2    50   ~ 0
++6V_A
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D89CA39
+P 7025 1850
+F 0 "#FLG0102" H 7025 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 7025 1977 50  0000 L CNN
+F 2 "" H 7025 1850 50  0001 C CNN
+F 3 "~" H 7025 1850 50  0001 C CNN
+	1    7025 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5D89CA3F
+P 7025 1600
+F 0 "#FLG0103" H 7025 1675 50  0001 C CNN
+F 1 "PWR_FLAG" V 7025 1727 50  0000 L CNN
+F 2 "" H 7025 1600 50  0001 C CNN
+F 3 "~" H 7025 1600 50  0001 C CNN
+	1    7025 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5D89CA45
+P 7025 1725
+F 0 "#FLG0104" H 7025 1800 50  0001 C CNN
+F 1 "PWR_FLAG" V 7025 1852 50  0000 L CNN
+F 2 "" H 7025 1725 50  0001 C CNN
+F 3 "~" H 7025 1725 50  0001 C CNN
+	1    7025 1725
+	0    1    1    0   
+$EndComp
+Text Label 7000 1725 2    50   ~ 0
++6V_B
+Wire Wire Line
+	7025 1850 6325 1850
+Wire Wire Line
+	7025 1725 6325 1725
+Wire Wire Line
+	7025 1600 6325 1600
+Wire Wire Line
+	6325 3350 7000 3350
+Wire Wire Line
+	6325 3225 7000 3225
+Wire Wire Line
+	6325 3100 7000 3100
+Wire Wire Line
+	6325 2850 7000 2850
+Wire Wire Line
+	6325 2725 7000 2725
+Wire Wire Line
+	6325 2600 7000 2600
+Text Label 7000 3600 2    50   ~ 0
+CAL
+Text Label 7000 3350 2    50   ~ 0
+RTNz
+Text Label 7000 2850 2    50   ~ 0
+Sz
+Text Label 7000 3100 2    50   ~ 0
+RTNx
+Text Label 7000 2600 2    50   ~ 0
+Sx
+Text Label 7000 3225 2    50   ~ 0
+RTNy
+Text Label 7000 2725 2    50   ~ 0
+Sy
+Wire Wire Line
+	1725 1475 1450 1475
+Text Label 2125 2375 0    50   ~ 0
+Sh_Y
+Text Label 2125 2275 0    50   ~ 0
+CR_Y
+Text Label 2125 2175 0    50   ~ 0
+M_Y
+Text Label 2125 2075 0    50   ~ 0
+B_Y
+Text Label 2125 2775 0    50   ~ 0
+Sh_Z
+Text Label 2125 2675 0    50   ~ 0
+CR_Z
+Text Label 2125 2575 0    50   ~ 0
+M_Z
+Text Label 2125 2475 0    50   ~ 0
+B_Z
+Text Label 9500 2075 2    50   ~ 0
+RTN_MON_A
+Text Label 9500 1175 2    50   ~ 0
+XShield
+Text Label 9500 1075 2    50   ~ 0
+RTNx
+Text Label 9500 1275 2    50   ~ 0
+Sx
+Text Label 9500 2175 2    50   ~ 0
+TEMP_MON_B
+Wire Wire Line
+	9600 1575 9500 1575
+Wire Wire Line
+	9600 1675 9500 1675
+Wire Wire Line
+	9600 1875 9500 1875
+Wire Wire Line
+	9600 1975 9500 1975
+Wire Wire Line
+	9600 2075 9500 2075
+Wire Wire Line
+	9600 2175 9500 2175
+Wire Wire Line
+	9600 2275 9500 2275
+Wire Wire Line
+	9600 2375 9500 2375
+Wire Wire Line
+	9600 2475 9500 2475
+Wire Wire Line
+	9500 1375 9600 1375
+Wire Wire Line
+	9500 1275 9600 1275
+Wire Wire Line
+	9500 1075 9600 1075
+Text Label 9500 2275 2    50   ~ 0
+RTN_MON_B
+Text Label 9500 2375 2    50   ~ 0
++6V_A
+Text Label 9500 1775 2    50   ~ 0
+ZShield
+Text Label 9500 1875 2    50   ~ 0
+RTNz
+Text Label 9500 1975 2    50   ~ 0
+TEMP_MON_A
+Text Label 9500 1375 2    50   ~ 0
+Sy
+Text Label 9500 1475 2    50   ~ 0
+YShield
+Text Label 9500 1575 2    50   ~ 0
+RTNy
+Text Label 9500 1675 2    50   ~ 0
+Sz
+Text Label 9500 2575 2    50   ~ 0
+RTN_A
+Text Label 9500 2475 2    50   ~ 0
+PWR_Shield_A
+Text Label 9500 2675 2    50   ~ 0
++6V_B
+Wire Wire Line
+	9600 3075 9500 3075
+Wire Wire Line
+	9600 3275 9500 3275
+Wire Wire Line
+	9600 3375 9500 3375
+Wire Wire Line
+	9500 2975 9600 2975
+Wire Wire Line
+	9500 2775 9600 2775
+Wire Wire Line
+	9500 2675 9600 2675
+Text Label 9500 3175 2    50   ~ 0
+RTN_C
+Text Label 9500 3275 2    50   ~ 0
+CAL
+Text Label 9500 3375 2    50   ~ 0
+CAL_Shield
+Text Label 9500 2775 2    50   ~ 0
+PWR_Shield_B
+Text Label 9500 2875 2    50   ~ 0
+RTN_B
+Text Label 9500 2975 2    50   ~ 0
++6V_C
+Text Label 9500 3075 2    50   ~ 0
+PWR_Shield_C
+Text Label 9500 3475 2    50   ~ 0
+CAL_RTN
+Wire Wire Line
+	8825 1175 8825 1475
+Wire Wire Line
+	8825 1175 9600 1175
+Wire Wire Line
+	8825 3475 9600 3475
+Wire Wire Line
+	8825 1475 9600 1475
+Connection ~ 8825 1475
+Wire Wire Line
+	8825 1475 8825 1775
+Wire Wire Line
+	8825 1775 9600 1775
+Connection ~ 8825 1775
+Wire Wire Line
+	8825 1775 8825 2575
+Wire Wire Line
+	8825 2575 9600 2575
+Connection ~ 8825 2575
+Wire Wire Line
+	8825 2575 8825 2875
+Wire Wire Line
+	8825 2875 9600 2875
+Connection ~ 8825 2875
+Wire Wire Line
+	8825 2875 8825 3175
+Wire Wire Line
+	8825 3175 9600 3175
+Connection ~ 8825 3175
+Wire Wire Line
+	8825 3175 8825 3475
+$Comp
+L power:GND #PWR0103
+U 1 1 5D958782
+P 8825 3525
+F 0 "#PWR0103" H 8825 3275 50  0001 C CNN
+F 1 "GND" H 8830 3352 50  0000 C CNN
+F 2 "" H 8825 3525 50  0001 C CNN
+F 3 "" H 8825 3525 50  0001 C CNN
+	1    8825 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 3525 8825 3475
+Connection ~ 8825 3475
+$Comp
+L Device:R R40
+U 1 1 5D96CF58
+P 5050 4950
+F 0 "R40" H 5120 4996 50  0000 L CNN
+F 1 "c-c" H 5120 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 4950 50  0001 C CNN
+F 3 "~" H 5050 4950 50  0001 C CNN
+	1    5050 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RthB0
+U 1 1 5D96D43A
+P 5725 4975
+F 0 "RthB0" H 5795 5021 50  0000 L CNN
+F 1 "1k" H 5795 4930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5655 4975 50  0001 C CNN
+F 3 "~" H 5725 4975 50  0001 C CNN
+	1    5725 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4800 5050 4675
+Wire Wire Line
+	5050 5100 5050 5250
+Wire Wire Line
+	5725 4825 5725 4675
+Wire Wire Line
+	5725 5125 5725 5275
+Text Label 5725 4675 0    50   ~ 0
+TEMP_MON_B
+Text Label 5725 5275 0    50   ~ 0
+RTN_MON_B
+$Comp
+L power:GND #PWR0104
+U 1 1 5D988E56
+P 5050 5250
+F 0 "#PWR0104" H 5050 5000 50  0001 C CNN
+F 1 "GND" H 5055 5077 50  0000 C CNN
+F 2 "" H 5050 5250 50  0001 C CNN
+F 3 "" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+Text Label 5050 4675 0    50   ~ 0
+Chassis
+Connection ~ 1450 1475
+Wire Wire Line
+	6325 3600 7000 3600
+Wire Wire Line
+	6325 2350 7000 2350
+Wire Wire Line
+	6325 2225 7000 2225
+Wire Wire Line
+	6325 2100 7000 2100
+Wire Wire Line
+	1450 1400 1450 1475
+Text Label 7000 2100 0    50   ~ 0
+RTN_A
+Text Label 7000 2225 0    50   ~ 0
+RTN_B
+Text Label 7000 2350 0    50   ~ 0
+RTN_C
+NoConn ~ 9500 2475
+NoConn ~ 9500 2775
+NoConn ~ 9500 3075
+Wire Wire Line
+	2700 1975 2700 2375
+Wire Wire Line
+	2025 1975 2700 1975
+Wire Wire Line
+	2025 2775 2700 2775
+Connection ~ 2700 2775
+Wire Wire Line
+	2700 2775 2700 3200
+Wire Wire Line
+	2025 2375 2700 2375
+Connection ~ 2700 2375
+Wire Wire Line
+	2700 2375 2700 2775
+$Comp
+L power:GND #PWR0139
+U 1 1 5DA4775C
+P 2700 3200
+F 0 "#PWR0139" H 2700 2950 50  0001 C CNN
+F 1 "GND" H 2705 3027 50  0000 C CNN
+F 2 "" H 2700 3200 50  0001 C CNN
+F 3 "" H 2700 3200 50  0001 C CNN
+	1    2700 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9500 3375
+$Comp
+L Connector:DB15_Male_MountingHoles J405
+U 1 1 5DA6854A
+P 1725 2375
+F 0 "J405" H 1880 2284 50  0000 L CNN
+F 1 "DB15_Male_MountingHoles" H 1880 2375 50  0000 L CNN
+F 2 "LibPersoNadj:GMR7580-15P-1BPN" H 1725 2375 50  0001 C CNN
+F 3 " ~" H 1725 2375 50  0001 C CNN
+	1    1725 2375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1475 1450 1550
+$Comp
+L power:GND #PWR0102
+U 1 1 5E8E0324
+P 9900 3725
+F 0 "#PWR0102" H 9900 3475 50  0001 C CNN
+F 1 "GND" H 9905 3552 50  0000 C CNN
+F 2 "" H 9900 3725 50  0001 C CNN
+F 3 "" H 9900 3725 50  0001 C CNN
+	1    9900 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3725 9900 3675
+$Comp
+L Connector:DB25_Female_MountingHoles J404
+U 1 1 5E8E356A
+P 9900 2275
+F 0 "J404" H 10080 2277 50  0000 L CNN
+F 1 "DB25_Female_MountingHoles" H 10080 2186 50  0000 L CNN
+F 2 "LibPersoNadj:GMR7580-25S-1BPN" H 9900 2275 50  0001 C CNN
+F 3 " ~" H 9900 2275 50  0001 C CNN
+	1    9900 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EA1E77F
+P 3725 6650
+F 0 "H1" H 3825 6696 50  0000 L CNN
+F 1 "MountingHole" H 3825 6605 50  0000 L CNN
+F 2 "LibPersoNadj:MountingHole_4.2" H 3725 6650 50  0001 C CNN
+F 3 "~" H 3725 6650 50  0001 C CNN
+	1    3725 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EA1EC08
+P 4650 6650
+F 0 "H2" H 4750 6696 50  0000 L CNN
+F 1 "MountingHole" H 4750 6605 50  0000 L CNN
+F 2 "LibPersoNadj:MountingHole_4.2" H 4650 6650 50  0001 C CNN
+F 3 "~" H 4650 6650 50  0001 C CNN
+	1    4650 6650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

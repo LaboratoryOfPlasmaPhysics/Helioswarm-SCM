@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Helioswarm-SCM-rescue)(type Legacy)(uri ${KIPRJMOD}/Helioswarm-SCM-rescue.lib)(options "")(descr ""))
+)
