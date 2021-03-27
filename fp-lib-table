@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name LibPersoNadj)(type KiCad)(uri ${KIPRJMOD}/LibPersoNadj.pretty)(options "")(descr ""))
 )
