@@ -1,4 +1,4 @@
-update=lun. 22 mars 2021 17:37:31
+update=Sat 27 Mar 2021 03:01:24 PM CET
 version=1
 last_client=kicad
 [general]
@@ -252,7 +252,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=helioswarm-scm.kicad_wks
 PlotDirectoryName=PDF
 SubpartIdSeparator=0
 SubpartFirstId=65

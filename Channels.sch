@@ -1253,7 +1253,7 @@ Wire Wire Line
 Wire Wire Line
 	9225 6150 9700 6150
 $Comp
-L Helioswarm-SCM-rescue:ASIC_JUICE_CQFP-64-LibPersoNadj U1
+L Helioswarm-SCM-rescue:ASIC_JUICE_CQFP-64-LibPersoNadj-Helioswarm-SCM-rescue U1
 U 1 1 5D8C6659
 P 4325 3725
 AR Path="/5D6520CE/5D5EAAA6/5D8C6659" Ref="U1"  Part="1" 
