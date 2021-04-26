@@ -18,9 +18,9 @@ Sh_X
 Text Label 1375 2825 0    50   ~ 0
 Chassis
 Text Label 1375 2925 0    50   ~ 0
-RTN_MON_A
+SCM_TEMP_SENSOR_2
 Text Label 1375 2725 0    50   ~ 0
-TEMP_MON_A
+SCM_TEMP_SENSOR_1
 $Comp
 L power:GND #PWR0101
 U 1 1 5D5B0EEF
@@ -72,7 +72,7 @@ Wire Wire Line
 Text Label 1375 1625 0    50   ~ 0
 M_X
 Text Label 1375 1525 0    50   ~ 0
-B_X
+SCM_X
 Wire Wire Line
 	975  1325 700  1325
 Text Label 1375 2225 0    50   ~ 0
@@ -82,7 +82,7 @@ CR_Y
 Text Label 1375 2025 0    50   ~ 0
 M_Y
 Text Label 1375 1925 0    50   ~ 0
-B_Y
+SCM_Y
 Text Label 1375 2625 0    50   ~ 0
 Sh_Z
 Text Label 1375 2525 0    50   ~ 0
@@ -90,17 +90,13 @@ CR_Z
 Text Label 1375 2425 0    50   ~ 0
 M_Z
 Text Label 1375 2325 0    50   ~ 0
-B_Z
-Text Label 10525 2100 2    50   ~ 0
-RTN_MON_A
+SCM_Z
 Text Label 10525 1200 2    50   ~ 0
 XShield
 Text Label 10525 1100 2    50   ~ 0
-RTNx
+SX-
 Text Label 10525 1300 2    50   ~ 0
-Sx
-Text Label 10525 2200 2    50   ~ 0
-TEMP_MON_B
+SX+
 Wire Wire Line
 	10625 1600 10525 1600
 Wire Wire Line
@@ -125,30 +121,26 @@ Wire Wire Line
 	10525 1300 10625 1300
 Wire Wire Line
 	10525 1100 10625 1100
-Text Label 10525 2300 2    50   ~ 0
-RTN_MON_B
 Text Label 10525 2400 2    50   ~ 0
-+6V_A
+VDD_X
 Text Label 10525 1800 2    50   ~ 0
 ZShield
 Text Label 10525 1900 2    50   ~ 0
-RTNz
-Text Label 10525 2000 2    50   ~ 0
-TEMP_MON_A
+SZ-
 Text Label 10525 1400 2    50   ~ 0
-Sy
+SY+
 Text Label 10525 1500 2    50   ~ 0
 YShield
 Text Label 10525 1600 2    50   ~ 0
-RTNy
+SY-
 Text Label 10525 1700 2    50   ~ 0
-Sz
+SZ+
 Text Label 10525 2600 2    50   ~ 0
-RTN_A
+GND_X
 Text Label 10525 2500 2    50   ~ 0
-PWR_Shield_A
+PWR_Shield_X
 Text Label 10525 2700 2    50   ~ 0
-+6V_B
+VDD_Y
 Wire Wire Line
 	10625 3100 10525 3100
 Wire Wire Line
@@ -162,73 +154,53 @@ Wire Wire Line
 Wire Wire Line
 	10525 2700 10625 2700
 Text Label 10525 3200 2    50   ~ 0
-RTN_C
+GND_Z
 Text Label 10525 3300 2    50   ~ 0
 CAL
 Text Label 10525 3400 2    50   ~ 0
 CAL_Shield
 Text Label 10525 2800 2    50   ~ 0
-PWR_Shield_B
+PWR_Shield_Y
 Text Label 10525 2900 2    50   ~ 0
-RTN_B
+GND_Y
 Text Label 10525 3000 2    50   ~ 0
-+6V_C
+VDD_Z
 Text Label 10525 3100 2    50   ~ 0
-PWR_Shield_C
+PWR_Shield_Z
 Text Label 10525 3500 2    50   ~ 0
 CAL_RTN
-Wire Wire Line
-	9850 1200 9850 1500
 Wire Wire Line
 	9850 1200 10625 1200
 Wire Wire Line
 	9850 3500 10625 3500
 Wire Wire Line
 	9850 1500 10625 1500
-Connection ~ 9850 1500
-Wire Wire Line
-	9850 1500 9850 1800
 Wire Wire Line
 	9850 1800 10625 1800
-Connection ~ 9850 1800
-Wire Wire Line
-	9850 1800 9850 2600
 Wire Wire Line
 	9850 2600 10625 2600
-Connection ~ 9850 2600
-Wire Wire Line
-	9850 2600 9850 2900
 Wire Wire Line
 	9850 2900 10625 2900
-Connection ~ 9850 2900
-Wire Wire Line
-	9850 2900 9850 3200
 Wire Wire Line
 	9850 3200 10625 3200
-Connection ~ 9850 3200
-Wire Wire Line
-	9850 3200 9850 3500
 $Comp
 L power:GND #PWR0103
 U 1 1 5D958782
-P 9850 3550
-F 0 "#PWR0103" H 9850 3300 50  0001 C CNN
-F 1 "GND" H 9855 3377 50  0000 C CNN
-F 2 "" H 9850 3550 50  0001 C CNN
-F 3 "" H 9850 3550 50  0001 C CNN
-	1    9850 3550
-	1    0    0    -1  
+P 9850 3500
+F 0 "#PWR0103" H 9850 3250 50  0001 C CNN
+F 1 "GND" H 9855 3327 50  0000 C CNN
+F 2 "" H 9850 3500 50  0001 C CNN
+F 3 "" H 9850 3500 50  0001 C CNN
+	1    9850 3500
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9850 3550 9850 3500
-Connection ~ 9850 3500
 $Comp
 L Device:R R102
 U 1 1 5D96CF58
 P 800 6575
 F 0 "R102" H 870 6621 50  0000 L CNN
 F 1 "c-c" H 870 6530 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 730 6575 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 730 6575 50  0001 C CNN
 F 3 "~" H 800 6575 50  0001 C CNN
 	1    800  6575
 	1    0    0    -1  
@@ -239,7 +211,7 @@ U 1 1 5D96D43A
 P 1475 6600
 F 0 "RthB101" H 1545 6646 50  0000 L CNN
 F 1 "1k" H 1545 6555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1405 6600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1405 6600 50  0001 C CNN
 F 3 "~" H 1475 6600 50  0001 C CNN
 	1    1475 6600
 	1    0    0    -1  
@@ -253,9 +225,7 @@ Wire Wire Line
 Wire Wire Line
 	1475 6750 1475 6900
 Text Label 1475 6300 0    50   ~ 0
-TEMP_MON_B
-Text Label 1475 6900 0    50   ~ 0
-RTN_MON_B
+PCB_TEMP_SENSOR_1
 $Comp
 L power:GND #PWR0107
 U 1 1 5D988E56
@@ -276,29 +246,21 @@ NoConn ~ 10525 2500
 NoConn ~ 10525 2800
 NoConn ~ 10525 3100
 Wire Wire Line
-	1950 1825 1950 2225
-Wire Wire Line
 	1275 1825 1950 1825
 Wire Wire Line
-	1275 2625 1950 2625
-Connection ~ 1950 2625
-Wire Wire Line
-	1950 2625 1950 3050
+	1275 2625 2225 2625
 Wire Wire Line
 	1275 2225 1950 2225
-Connection ~ 1950 2225
-Wire Wire Line
-	1950 2225 1950 2625
 $Comp
 L power:GND #PWR0102
 U 1 1 5DA4775C
-P 1950 3050
-F 0 "#PWR0102" H 1950 2800 50  0001 C CNN
-F 1 "GND" H 1955 2877 50  0000 C CNN
-F 2 "" H 1950 3050 50  0001 C CNN
-F 3 "" H 1950 3050 50  0001 C CNN
-	1    1950 3050
-	1    0    0    -1  
+P 1950 2225
+F 0 "#PWR0102" H 1950 1975 50  0001 C CNN
+F 1 "GND" H 1955 2052 50  0000 C CNN
+F 2 "" H 1950 2225 50  0001 C CNN
+F 3 "" H 1950 2225 50  0001 C CNN
+	1    1950 2225
+	0    -1   -1   0   
 $EndComp
 NoConn ~ 10525 3400
 $Comp
@@ -471,15 +433,14 @@ F4 "OUT-" I R 6300 1475 50
 F5 "OUT+" I R 6300 1375 50 
 F6 "CAL_IN" I L 5200 1725 50 
 F7 "M" I R 6300 2025 50 
-F8 "+6V" I L 5200 1250 50 
-F9 "GND" I L 5200 2100 50 
+F8 "VDD_IN" I L 5200 1250 50 
 $EndSheet
 Text Label 6625 1725 0    50   ~ 0
 CR_X
 Text Label 6625 2025 0    50   ~ 0
 M_X
 Text Label 4875 1425 2    50   ~ 0
-B_X
+SCM_X
 Wire Wire Line
 	5200 1425 4875 1425
 Wire Wire Line
@@ -489,33 +450,19 @@ Wire Wire Line
 Wire Wire Line
 	6625 1725 6300 1725
 Text Label 6625 1475 0    50   ~ 0
-RTNx
+SX-
 Text Label 6625 1375 0    50   ~ 0
-Sx
+SX+
 Text Label 4875 1725 2    50   ~ 0
 CAL
 Text Label 4875 1250 2    50   ~ 0
-+6V_A
+VDD_X
 Wire Wire Line
 	6625 1475 6300 1475
 Wire Wire Line
 	6625 1375 6300 1375
 Wire Wire Line
 	5200 1250 4875 1250
-$Sheet
-S 5175 2475 1100 1025
-U 6075FBD1
-F0 "ASIC_Y_Channel" 50
-F1 "Channels.sch" 50
-F2 "SCM_IN" I L 5175 2725 50 
-F3 "SCM_CR" I R 6275 3025 50 
-F4 "OUT-" I R 6275 2775 50 
-F5 "OUT+" I R 6275 2675 50 
-F6 "CAL_IN" I L 5175 3025 50 
-F7 "M" I R 6275 3325 50 
-F8 "+6V" I L 5175 2550 50 
-F9 "GND" I L 5175 3400 50 
-$EndSheet
 Wire Wire Line
 	5175 2725 4850 2725
 Wire Wire Line
@@ -541,8 +488,7 @@ F4 "OUT-" I R 6275 4250 50
 F5 "OUT+" I R 6275 4150 50 
 F6 "CAL_IN" I L 5175 4500 50 
 F7 "M" I R 6275 4800 50 
-F8 "+6V" I L 5175 4025 50 
-F9 "GND" I L 5175 4875 50 
+F8 "VDD_IN" I L 5175 4025 50 
 $EndSheet
 Wire Wire Line
 	5175 4200 4850 4200
@@ -563,27 +509,138 @@ CR_Y
 Text Label 6600 3325 0    50   ~ 0
 M_Y
 Text Label 4850 2725 2    50   ~ 0
-B_Y
+SCM_Y
 Text Label 6600 4500 0    50   ~ 0
 CR_Z
 Text Label 6600 4800 0    50   ~ 0
 M_Z
 Text Label 4850 4200 2    50   ~ 0
-B_Z
+SCM_Z
 Text Label 6600 2775 0    50   ~ 0
-RTNy
+SY-
 Text Label 6600 4150 0    50   ~ 0
-Sz
+SZ+
 Text Label 6600 2675 0    50   ~ 0
-Sy
+SY+
 Text Label 6600 4250 0    50   ~ 0
-RTNz
+SZ-
 Text Label 4850 2550 2    50   ~ 0
-+6V_B
+VDD_Y
 Text Label 4850 4025 2    50   ~ 0
-+6V_C
+VDD_Z
 Text Label 4850 4500 2    50   ~ 0
 CAL
 Text Label 4850 3025 2    50   ~ 0
 CAL
+Text Label 1475 6900 0    50   ~ 0
+PCB_TEMP_SENSOR_2
+Text Label 10525 2100 2    50   ~ 0
+SCM_TEMP_SENSOR_2
+Text Label 10525 2000 2    50   ~ 0
+SCM_TEMP_SENSOR_1
+Text Label 10525 2200 2    50   ~ 0
+PCB_TEMP_SENSOR_1
+Text Label 10525 2300 2    50   ~ 0
+PCB_TEMP_SENSOR_2
+$Comp
+L power:GND #PWR0108
+U 1 1 6089E939
+P 9850 3200
+F 0 "#PWR0108" H 9850 2950 50  0001 C CNN
+F 1 "GND" H 9855 3027 50  0000 C CNN
+F 2 "" H 9850 3200 50  0001 C CNN
+F 3 "" H 9850 3200 50  0001 C CNN
+	1    9850 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 608A0FDA
+P 9850 2900
+F 0 "#PWR0109" H 9850 2650 50  0001 C CNN
+F 1 "GND" H 9855 2727 50  0000 C CNN
+F 2 "" H 9850 2900 50  0001 C CNN
+F 3 "" H 9850 2900 50  0001 C CNN
+	1    9850 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 608A373E
+P 9850 2600
+F 0 "#PWR0110" H 9850 2350 50  0001 C CNN
+F 1 "GND" H 9855 2427 50  0000 C CNN
+F 2 "" H 9850 2600 50  0001 C CNN
+F 3 "" H 9850 2600 50  0001 C CNN
+	1    9850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 608A5E65
+P 9850 1800
+F 0 "#PWR0111" H 9850 1550 50  0001 C CNN
+F 1 "GND" H 9855 1627 50  0000 C CNN
+F 2 "" H 9850 1800 50  0001 C CNN
+F 3 "" H 9850 1800 50  0001 C CNN
+	1    9850 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 608A5E77
+P 9850 1500
+F 0 "#PWR0112" H 9850 1250 50  0001 C CNN
+F 1 "GND" H 9855 1327 50  0000 C CNN
+F 2 "" H 9850 1500 50  0001 C CNN
+F 3 "" H 9850 1500 50  0001 C CNN
+	1    9850 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 608A5E81
+P 9850 1200
+F 0 "#PWR0113" H 9850 950 50  0001 C CNN
+F 1 "GND" H 9855 1027 50  0000 C CNN
+F 2 "" H 9850 1200 50  0001 C CNN
+F 3 "" H 9850 1200 50  0001 C CNN
+	1    9850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 608ADC27
+P 1950 1825
+F 0 "#PWR0114" H 1950 1575 50  0001 C CNN
+F 1 "GND" H 1955 1652 50  0000 C CNN
+F 2 "" H 1950 1825 50  0001 C CNN
+F 3 "" H 1950 1825 50  0001 C CNN
+	1    1950 1825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 608B03F4
+P 2225 2625
+F 0 "#PWR0115" H 2225 2375 50  0001 C CNN
+F 1 "GND" H 2230 2452 50  0000 C CNN
+F 2 "" H 2225 2625 50  0001 C CNN
+F 3 "" H 2225 2625 50  0001 C CNN
+	1    2225 2625
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 5175 2475 1100 1025
+U 6075FBD1
+F0 "ASIC_Y_Channel" 50
+F1 "Channels.sch" 50
+F2 "SCM_IN" I L 5175 2725 50 
+F3 "SCM_CR" I R 6275 3025 50 
+F4 "OUT-" I R 6275 2775 50 
+F5 "OUT+" I R 6275 2675 50 
+F6 "CAL_IN" I L 5175 3025 50 
+F7 "M" I R 6275 3325 50 
+F8 "VDD_IN" I L 5175 2550 50 
+$EndSheet
 $EndSCHEMATC
