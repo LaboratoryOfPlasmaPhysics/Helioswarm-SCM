@@ -269,7 +269,7 @@ U 1 1 5DA6854A
 P 975 2225
 F 0 "J101" H 1130 2134 50  0000 L CNN
 F 1 "DB15_Male_MountingHoles" H 1130 2225 50  0001 L CNN
-F 2 "LibPersoNadj:GMR7580-15P-1BPN" H 975 2225 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 975 2225 50  0001 C CNN
 F 3 " ~" H 975 2225 50  0001 C CNN
 	1    975  2225
 	-1   0    0    1   
@@ -295,7 +295,7 @@ U 1 1 5E8E356A
 P 10925 2300
 F 0 "J102" H 10825 3750 50  0000 L CNN
 F 1 "DB25_Female_MountingHoles" H 10325 3750 50  0001 L CNN
-F 2 "LibPersoNadj:GMR7580-25S-1BPN" H 10925 2300 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10925 2300 50  0001 C CNN
 F 3 " ~" H 10925 2300 50  0001 C CNN
 	1    10925 2300
 	1    0    0    -1  
@@ -643,4 +643,61 @@ F6 "CAL_IN" I L 5175 3025 50
 F7 "M" I R 6275 3325 50 
 F8 "VDD_IN" I L 5175 2550 50 
 $EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J104
+U 1 1 60A0247E
+P 7600 1350
+F 0 "J104" H 7680 1342 50  0000 L CNN
+F 1 "Conn_01x02" H 7680 1251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 1350 50  0001 C CNN
+F 3 "~" H 7600 1350 50  0001 C CNN
+	1    7600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J103
+U 1 1 60A02EEF
+P 7550 2675
+F 0 "J103" H 7630 2667 50  0000 L CNN
+F 1 "Conn_01x02" H 7630 2576 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7550 2675 50  0001 C CNN
+F 3 "~" H 7550 2675 50  0001 C CNN
+	1    7550 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J105
+U 1 1 60A0584B
+P 7725 4125
+F 0 "J105" H 7805 4117 50  0000 L CNN
+F 1 "Conn_01x02" H 7805 4026 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7725 4125 50  0001 C CNN
+F 3 "~" H 7725 4125 50  0001 C CNN
+	1    7725 4125
+	1    0    0    -1  
+$EndComp
+Text Label 7250 1450 2    50   ~ 0
+SX-
+Text Label 7250 1350 2    50   ~ 0
+SX+
+Wire Wire Line
+	7250 1450 7400 1450
+Wire Wire Line
+	7250 1350 7400 1350
+Wire Wire Line
+	7200 2775 7350 2775
+Wire Wire Line
+	7200 2675 7350 2675
+Text Label 7200 2775 2    50   ~ 0
+SY-
+Text Label 7200 2675 2    50   ~ 0
+SY+
+Wire Wire Line
+	7350 4225 7525 4225
+Wire Wire Line
+	7350 4125 7525 4125
+Text Label 7350 4125 2    50   ~ 0
+SZ+
+Text Label 7350 4225 2    50   ~ 0
+SZ-
 $EndSCHEMATC
