@@ -13,83 +13,66 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1375 1825 0    50   ~ 0
+Text Label 1950 1125 0    50   ~ 0
 Sh_X
-Text Label 1375 2825 0    50   ~ 0
+Text Label 1950 2125 0    50   ~ 0
 Chassis
-Text Label 1375 2925 0    50   ~ 0
+Text Label 1950 2225 0    50   ~ 0
 SCM_TEMP_SENSOR_2
-Text Label 1375 2725 0    50   ~ 0
+Text Label 1950 2025 0    50   ~ 0
 SCM_TEMP_SENSOR_1
 $Comp
 L power:GND #PWR0101
 U 1 1 5D5B0EEF
-P 700 1400
-F 0 "#PWR0101" H 700 1150 50  0001 C CNN
-F 1 "GND" H 705 1227 50  0000 C CNN
-F 2 "" H 700 1400 50  0001 C CNN
-F 3 "" H 700 1400 50  0001 C CNN
-	1    700  1400
-	1    0    0    -1  
-$EndComp
-Text Label 1375 1725 0    50   ~ 0
-CR_X
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5D666F48
-P 700 1250
-F 0 "#FLG0101" H 700 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 700 1423 50  0000 C CNN
-F 2 "" H 700 1250 50  0001 C CNN
-F 3 "~" H 700 1250 50  0001 C CNN
-	1    700  1250
+P 1550 2500
+F 0 "#PWR0101" H 1550 2250 50  0001 C CNN
+F 1 "GND" H 1555 2327 50  0000 C CNN
+F 2 "" H 1550 2500 50  0001 C CNN
+F 3 "" H 1550 2500 50  0001 C CNN
+	1    1550 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1275 2425 1375 2425
+	1850 1725 1950 1725
 Wire Wire Line
-	1275 2325 1375 2325
+	1850 1625 1950 1625
 Wire Wire Line
-	1275 2125 1375 2125
+	1850 1425 1950 1425
 Wire Wire Line
-	1275 2025 1375 2025
+	1850 1325 1950 1325
 Wire Wire Line
-	1275 1925 1375 1925
+	1850 1225 1950 1225
 Wire Wire Line
-	1275 1725 1375 1725
+	1850 925  1950 925 
 Wire Wire Line
-	1275 1625 1375 1625
+	1850 825  1950 825 
 Wire Wire Line
-	1275 1525 1375 1525
+	1950 1825 1850 1825
 Wire Wire Line
-	1375 2525 1275 2525
+	1950 2025 1850 2025
 Wire Wire Line
-	1375 2725 1275 2725
+	1950 2125 1850 2125
 Wire Wire Line
-	1375 2825 1275 2825
-Wire Wire Line
-	1375 2925 1275 2925
-Text Label 1375 1625 0    50   ~ 0
+	1950 2225 1850 2225
+Text Label 1950 925  0    50   ~ 0
 M_X
-Text Label 1375 1525 0    50   ~ 0
+Text Label 1950 825  0    50   ~ 0
 SCM_X
-Wire Wire Line
-	975  1325 700  1325
-Text Label 1375 2225 0    50   ~ 0
+Text Label 1950 1525 0    50   ~ 0
 Sh_Y
-Text Label 1375 2125 0    50   ~ 0
+Text Label 1950 1425 0    50   ~ 0
 CR_Y
-Text Label 1375 2025 0    50   ~ 0
+Text Label 1950 1325 0    50   ~ 0
 M_Y
-Text Label 1375 1925 0    50   ~ 0
+Text Label 1950 1225 0    50   ~ 0
 SCM_Y
-Text Label 1375 2625 0    50   ~ 0
+Text Label 1950 1925 0    50   ~ 0
 Sh_Z
-Text Label 1375 2525 0    50   ~ 0
+Text Label 1950 1825 0    50   ~ 0
 CR_Z
-Text Label 1375 2425 0    50   ~ 0
+Text Label 1950 1725 0    50   ~ 0
 M_Z
-Text Label 1375 2325 0    50   ~ 0
+Text Label 1950 1625 0    50   ~ 0
 SCM_Z
 Text Label 10525 1200 2    50   ~ 0
 XShield
@@ -239,43 +222,27 @@ F 3 "" H 800 6875 50  0001 C CNN
 $EndComp
 Text Label 800  6300 0    50   ~ 0
 Chassis
-Connection ~ 700  1325
-Wire Wire Line
-	700  1250 700  1325
 NoConn ~ 10525 2500
 NoConn ~ 10525 2800
 NoConn ~ 10525 3100
 Wire Wire Line
-	1275 1825 1950 1825
+	1850 1125 2400 1125
 Wire Wire Line
-	1275 2625 2225 2625
+	1850 1925 2400 1925
 Wire Wire Line
-	1275 2225 1950 2225
+	1850 1525 2400 1525
 $Comp
 L power:GND #PWR0102
 U 1 1 5DA4775C
-P 1950 2225
-F 0 "#PWR0102" H 1950 1975 50  0001 C CNN
-F 1 "GND" H 1955 2052 50  0000 C CNN
-F 2 "" H 1950 2225 50  0001 C CNN
-F 3 "" H 1950 2225 50  0001 C CNN
-	1    1950 2225
+P 2400 1525
+F 0 "#PWR0102" H 2400 1275 50  0001 C CNN
+F 1 "GND" H 2405 1352 50  0000 C CNN
+F 2 "" H 2400 1525 50  0001 C CNN
+F 3 "" H 2400 1525 50  0001 C CNN
+	1    2400 1525
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 10525 3400
-$Comp
-L Connector:DB15_Male_MountingHoles J101
-U 1 1 5DA6854A
-P 975 2225
-F 0 "J101" H 1130 2134 50  0000 L CNN
-F 1 "DB15_Male_MountingHoles" H 1130 2225 50  0001 L CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 975 2225 50  0001 C CNN
-F 3 " ~" H 975 2225 50  0001 C CNN
-	1    975  2225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	700  1325 700  1400
 $Comp
 L power:GND #PWR0104
 U 1 1 5E8E0324
@@ -298,28 +265,6 @@ F 1 "DB25_Female_MountingHoles" H 10325 3750 50  0001 L CNN
 F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10925 2300 50  0001 C CNN
 F 3 " ~" H 10925 2300 50  0001 C CNN
 	1    10925 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H101
-U 1 1 5EA1E77F
-P 5175 7575
-F 0 "H101" H 5275 7621 50  0000 L CNN
-F 1 "MountingHole" H 5275 7530 50  0000 L CNN
-F 2 "LibPersoNadj:MountingHole_4.2" H 5175 7575 50  0001 C CNN
-F 3 "~" H 5175 7575 50  0001 C CNN
-	1    5175 7575
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H102
-U 1 1 5EA1EC08
-P 6100 7575
-F 0 "H102" H 6200 7621 50  0000 L CNN
-F 1 "MountingHole" H 6200 7530 50  0000 L CNN
-F 2 "LibPersoNadj:MountingHole_4.2" H 6100 7575 50  0001 C CNN
-F 3 "~" H 6100 7575 50  0001 C CNN
-	1    6100 7575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -611,23 +556,23 @@ $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 608ADC27
-P 1950 1825
-F 0 "#PWR0114" H 1950 1575 50  0001 C CNN
-F 1 "GND" H 1955 1652 50  0000 C CNN
-F 2 "" H 1950 1825 50  0001 C CNN
-F 3 "" H 1950 1825 50  0001 C CNN
-	1    1950 1825
+P 2400 1125
+F 0 "#PWR0114" H 2400 875 50  0001 C CNN
+F 1 "GND" H 2405 952 50  0000 C CNN
+F 2 "" H 2400 1125 50  0001 C CNN
+F 3 "" H 2400 1125 50  0001 C CNN
+	1    2400 1125
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 608B03F4
-P 2225 2625
-F 0 "#PWR0115" H 2225 2375 50  0001 C CNN
-F 1 "GND" H 2230 2452 50  0000 C CNN
-F 2 "" H 2225 2625 50  0001 C CNN
-F 3 "" H 2225 2625 50  0001 C CNN
-	1    2225 2625
+P 2400 1925
+F 0 "#PWR0115" H 2400 1675 50  0001 C CNN
+F 1 "GND" H 2405 1752 50  0000 C CNN
+F 2 "" H 2400 1925 50  0001 C CNN
+F 3 "" H 2400 1925 50  0001 C CNN
+	1    2400 1925
 	0    -1   -1   0   
 $EndComp
 $Sheet
@@ -700,4 +645,117 @@ Text Label 7350 4125 2    50   ~ 0
 SZ+
 Text Label 7350 4225 2    50   ~ 0
 SZ-
+Wire Wire Line
+	1550 2500 1550 2425
+Wire Wire Line
+	1850 1025 1950 1025
+Text Label 1950 1025 0    50   ~ 0
+CR_X
+$Comp
+L Connector:DB15_Female_MountingHoles J101
+U 1 1 60962A4F
+P 1550 1525
+F 0 "J101" H 1456 2517 50  0000 C CNN
+F 1 "DB15_Female_MountingHoles" H 1456 2426 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 1550 1525 50  0001 C CNN
+F 3 " ~" H 1550 1525 50  0001 C CNN
+	1    1550 1525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 60A3A1B1
+P 3975 6725
+F 0 "H101" H 4075 6728 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4075 6683 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3975 6725 50  0001 C CNN
+F 3 "~" H 3975 6725 50  0001 C CNN
+	1    3975 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 60A3AA6E
+P 4375 6725
+F 0 "H102" H 4475 6728 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4475 6683 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4375 6725 50  0001 C CNN
+F 3 "~" H 4375 6725 50  0001 C CNN
+	1    4375 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 60A3DD7B
+P 4775 6725
+F 0 "H103" H 4875 6728 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4875 6683 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4775 6725 50  0001 C CNN
+F 3 "~" H 4775 6725 50  0001 C CNN
+	1    4775 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 60A3E019
+P 5175 6725
+F 0 "H104" H 5275 6728 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5275 6683 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5175 6725 50  0001 C CNN
+F 3 "~" H 5175 6725 50  0001 C CNN
+	1    5175 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 60A41207
+P 3975 6900
+F 0 "#PWR0128" H 3975 6650 50  0001 C CNN
+F 1 "GND" H 3980 6727 50  0000 C CNN
+F 2 "" H 3975 6900 50  0001 C CNN
+F 3 "" H 3975 6900 50  0001 C CNN
+	1    3975 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 6900 3975 6825
+$Comp
+L power:GND #PWR0129
+U 1 1 60A4445A
+P 4375 6900
+F 0 "#PWR0129" H 4375 6650 50  0001 C CNN
+F 1 "GND" H 4380 6727 50  0000 C CNN
+F 2 "" H 4375 6900 50  0001 C CNN
+F 3 "" H 4375 6900 50  0001 C CNN
+	1    4375 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 6900 4375 6825
+$Comp
+L power:GND #PWR0130
+U 1 1 60A4769D
+P 4775 6900
+F 0 "#PWR0130" H 4775 6650 50  0001 C CNN
+F 1 "GND" H 4780 6727 50  0000 C CNN
+F 2 "" H 4775 6900 50  0001 C CNN
+F 3 "" H 4775 6900 50  0001 C CNN
+	1    4775 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 6900 4775 6825
+$Comp
+L power:GND #PWR0131
+U 1 1 60A4A489
+P 5175 6900
+F 0 "#PWR0131" H 5175 6650 50  0001 C CNN
+F 1 "GND" H 5180 6727 50  0000 C CNN
+F 2 "" H 5175 6900 50  0001 C CNN
+F 3 "" H 5175 6900 50  0001 C CNN
+	1    5175 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 6900 5175 6825
 $EndSCHEMATC
