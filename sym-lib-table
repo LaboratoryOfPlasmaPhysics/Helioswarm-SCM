@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Helioswarm-SCM-rescue)(type Legacy)(uri ${KIPRJMOD}/Helioswarm-SCM-rescue.lib)(options "")(descr ""))
+  (lib (name LibPersoNadj)(type Legacy)(uri ${KIPRJMOD}/LibPersoNadj.lib)(options "")(descr ""))
 )

@@ -758,4 +758,26 @@ F 3 "" H 5175 6900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5175 6900 5175 6825
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 609B9AEA
+P 6250 6700
+F 0 "LOGO1" H 6250 6975 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 6250 6475 50  0001 C CNN
+F 2 "Symbol:KiCad-Logo2_8mm_SilkScreen" H 6250 6700 50  0001 C CNN
+F 3 "~" H 6250 6700 50  0001 C CNN
+	1    6250 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 609BF7C1
+P 6250 7200
+F 0 "LOGO2" H 6250 7475 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 6250 6975 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_7.5x8mm_SilkScreen" H 6250 7200 50  0001 C CNN
+F 3 "~" H 6250 7200 50  0001 C CNN
+	1    6250 7200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
